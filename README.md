@@ -7,3 +7,7 @@ The course website template for CSE 154: Web Programming at the University of Wa
 - [How To Update Website Content](./json/README.md)
 - [Where To Put Lecture Slides](./lectures/README.md)
 - [Where To Staff Websites and Photos](./staff/README.md)
+
+## Licensing
+
+Contributions are licensed through MIT Open Source.
