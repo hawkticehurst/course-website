@@ -1,4 +1,4 @@
-# CSE 154 Lectures Directory
+# Lectures Directory
 
 The `lectures` directory should be used to store all lecture slides. Typically slides are made using reveal.js, thus a copy of the source code has been saved into the same directory.
 

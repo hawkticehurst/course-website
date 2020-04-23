@@ -1,4 +1,4 @@
-# CSE 154 Rendering Course Content
+# Rendering Course Content
 
 The CSE 154 course website uses a JSON based system for dynamically rendering course content. This means changes made to each of the JSON files in this directory will update the website with information corresponding to the file name.
 

@@ -1,4 +1,4 @@
-# CSE 154 Staff Directory
+# Staff Directory
 
 The `staff` directory should be used to store all staff About Me websites and profile photos.
 
