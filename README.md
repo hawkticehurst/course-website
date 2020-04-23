@@ -1,4 +1,4 @@
-# Course Website
+# CSE 154 Course Website
 
 A modern and responsive course website used by CSE 154: Web Programming at the University of Washington.
 
