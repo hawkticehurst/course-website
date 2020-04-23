@@ -1,0 +1,36 @@
+{
+  "sessions": [
+    {
+      "name": "Week 1: Topic",
+      "date": "Insert Date",
+      "location": "Insert Location",
+      "description": "Exploration session description.",
+      "slides": "#",
+      "video": "#",
+      "materials": []
+    },
+    {
+      "name": "Week 2: Topic",
+      "date": "Insert Date",
+      "location": "Insert Location",
+      "description": "Exploration session description.",
+      "slides": "#",
+      "video": "#",
+      "materials": [
+        {
+          "linkname": "Arbitrary Link",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Week 3: Topic",
+      "date": "Insert Date",
+      "location": "Insert Location",
+      "description": "Exploration session description.",
+      "slides": "#",
+      "video": "#",
+      "materials": []
+    }
+  ]
+}

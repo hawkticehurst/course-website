@@ -1,0 +1,1150 @@
+/*
+  Stylesheet for CSE 154 course website
+*/
+
+/****************************** Global Styles *********************************/
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Open+Sans:400,600,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #252629;
+  background-color: #F6F6F6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+.page-title {
+  font-size: 24pt;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.blue-link {
+  text-decoration: underline;
+  color: #0076ff;
+  margin: 0;
+}
+
+.blue-link:hover {
+  color: #0706ff;
+}
+
+.white-link {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.card {
+  width: 30em;
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #D7DBDD;
+  margin: 5px auto 20px auto;
+}
+
+.card > img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.button {
+  color: white;
+  font-size: 10pt;
+  margin: 6px 0px 15px 20px;
+  background-color: #0076ff;
+  width: 100px;
+  padding: 6px 12px 6px 12px;
+  border-radius: 7px;
+  box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+  text-align: center;
+}
+
+.button:hover {
+  background-color:#4098FF;
+}
+
+.first-title-in-main {
+  margin-top: 50px;
+}
+
+.header-info, .main-content, footer {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cp-container, #explore-container, #section-container, #labs-container {
+  margin-top: 3.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+code {
+  color: #c7254e;
+  background-color: #f7f7f9;
+  border-radius: 3px;
+  padding: 0.25em;
+}
+
+/***** Navigation Bar *****/
+header {
+  background-color: #FEFEFE;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 16pt;
+  margin-right: 30px;
+}
+
+/*
+  Animating Underline in Navigation Bar
+  Credit: http://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+*/
+header > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+header > a:hover {
+  color: #000;
+}
+
+header > a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7063EC;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header > a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7063EC;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#mobile-dropdown-icon, #mobile-x-icon {
+  display: none;
+}
+
+#mobile-dropdown-icon:hover, #mobile-x-icon:hover {
+  cursor: pointer;
+}
+
+/* Addresses fixed website header overlapping with in-page anchors */
+:target::before {
+  content: "";
+  display: block;
+  height: 4.2em; /* fixed header height */
+  margin-top: -4.2em; /* negative fixed header height */
+  visibility: hidden;
+}
+
+/***** Footer *****/
+footer {
+  padding: 0;
+}
+
+#footer-items-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#cse-wordmark {
+  width: 20em;
+}
+
+footer img {
+  transform-origin: left top;
+  max-width: 100%;
+  height: auto;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #0076ff;
+  margin-top: 5px;
+  margin-right: 0;
+}
+
+/***************************** Index.html Styles ******************************/
+
+/***** Welcome Container *****/
+#welcome-container {
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#title-container {
+  margin-top: 10em;
+  width: 37em;
+}
+
+#title-container h1 {
+  font-size: 30pt;
+  margin-bottom: 0;
+}
+
+#btn-container {
+  display: flex;
+}
+
+#btn-container > div {
+  margin-right: 1em;
+}
+
+#welcome-container img {
+  height: 35em;
+  width: 30em;
+}
+
+#cta-btn {
+  margin: 5px 0 5px;
+  padding: 0.65em;
+}
+
+#cta-btn p {
+  padding: 0;
+  margin: 0;
+}
+
+.badge {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  padding: 5px 9px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+/***** Quick Links *****/
+#quick-link-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.quick-link-card {
+  display: flex;
+  flex-direction: column;
+  width: 17em;
+  height: 18em;
+  padding-left: 1.5em;
+  margin: 1em;
+}
+
+.quick-link-card h3 {
+  margin-bottom: 0;
+}
+
+.quick-link-card ul {
+  padding-left: 2.2em;
+}
+
+/***** Announcements *****/
+
+#announcements {
+  margin-bottom: 4em;
+}
+
+#announcements-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1em 1em 1em 2em;
+}
+
+#annoucements {
+  padding-top: 150px;
+}
+
+#announcements h2 {
+  margin-bottom: 1em;
+}
+
+#announcements li:not(:last-child) {
+  margin-bottom: 0.6em;
+}
+
+/***** Staff *****/
+.staff-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.staff-card {
+  margin: 5px auto 20px auto;
+  width: 23em;
+}
+
+.staff-info > a {
+  margin: 0 15px;
+}
+
+.staff-name {
+  margin: 0;
+}
+
+.staff-info a:hover, .name-email-container a:hover {
+  color: #7063EC;
+  cursor: pointer;
+}
+
+.staff-info h3 {
+  margin: 15px 0 15px 15px;
+}
+
+.staff-info p {
+  margin: 0 15px 5px 15px;
+}
+
+.name-email-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.name-email-container h3 {
+  margin-right: 0;
+}
+
+.name-email-container > a {
+  width: 22px;
+  height: 22px;
+}
+
+/**************************** Calendar.html Styles ****************************/
+
+.calendar {
+  width: 95%;
+}
+
+.month {
+  margin-top: 3em;
+}
+
+.wpl-calendar {
+  margin-top: 3.5em;
+}
+
+.month h2 {
+  margin-left: 2.5%;
+}
+
+table {
+  border-spacing: 0;
+}
+
+th {
+  background-color: #232323;
+  color: white;
+  border: black solid 2px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+table th:nth-child(1n+1) {
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+table th:first-child {
+  border-top-left-radius: 5px;
+  border-left-width: 2px;
+}
+
+table th:last-child {
+  border-top-right-radius: 5px;
+  border-right-width: 2px;
+}
+
+table td {
+  vertical-align: top;
+  border: 2px solid black;
+  width: 20em;
+  margin: 0;
+  padding: 0;
+  height: 15em;
+}
+
+table td:nth-child(1n+1) {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+table td:first-child {
+  border-left-width: 2px;
+}
+
+table td:last-child {
+  border-right-width: 2px;
+}
+
+table tr:last-child td:nth-child(1n+1) {
+  border-bottom-width: 2px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-width: 2px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 2px;
+}
+
+td hr {
+  width: 92%;
+}
+
+#grade-table td {
+  height: auto;
+}
+
+.event-card {
+  border-radius: 5px;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.event-card p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.event-card p:nth-child(1n+2) {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.event-card ul {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.oh-shift, .wpl-shift, .lecture, .section, .hw, .cp, .exam, .explore, .holiday {
+  border: 2pt solid;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+.summary {
+  margin: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.description {
+  margin: 0.5em 0 0 0;
+}
+
+.lecture {
+  border-color: #dfdaf1;
+}
+
+.lecture > .summary {
+  background-color: #dfdaf1;
+}
+
+.section {
+  border-color: #78d4a5;
+}
+
+.section > .summary {
+  background-color: #78d4a5;
+}
+
+.hw {
+  border-color: #4DA1FD;
+}
+
+.hw > .summary {
+  background-color: #4DA1FD;
+}
+
+.cp {
+  border-color: #FF985C;
+}
+
+.cp > .summary {
+  background-color: #FF985C;
+}
+
+.exam {
+  border-color: #f2dede;
+}
+
+.exam > .summary {
+  background-color: #f2dede;
+}
+
+.explore {
+  border-color: #CA4DFD;
+}
+
+.explore > .summary {
+  background-color: #CA4DFD;
+}
+
+.holiday {
+  border-color: #CCCCCC;
+}
+
+.holiday > .summary {
+  background-color: #CCCCCC;
+}
+
+.oh-shift {
+  border-color: #5A87FF;
+}
+
+.oh-shift > .summary {
+  background-color: #5A87FF;
+}
+
+.wpl-shift {
+  border-color: #37B26B;
+}
+
+.wpl-shift > .summary {
+  background-color: #37B26B;
+}
+
+.datespan {
+  display: block;
+  text-align: right;
+  font-size: 1.2em;
+  margin-right: 0.3em;
+}
+
+.wpl-day-mobile {
+  display: none;
+}
+
+.highlight-cal {
+  border-color: #0076ff;
+  border-width: 4px !important;
+}
+
+/**************************** Homework.html Styles ****************************/
+
+#homework-container {
+  margin-top: 3.5em;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assignment-card {
+  flex-direction: column;
+  width: 600px;
+}
+
+.assignment-card > div:not(:last-child) {
+  display: flex;
+  margin: 0 20px 8px 20px;
+}
+
+.assignment-card h2 {
+  margin: 10px 20px 15px 20px;
+}
+
+.assignment-card h3 {
+  margin: 0;
+  font-size: 12pt;
+}
+
+.assignment-card p {
+  margin: 0 5px 0 5px;
+  font-size: 12pt;
+}
+
+.assignment-card > p {
+  margin: 0 20px 8px 20px;
+  font-size: 12pt;
+}
+
+.button-container {
+  padding: 10px 0 20px 0;
+}
+
+/************************** Showcase.html Styles ***************************/
+
+.cp-showcase-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.cp-showcase-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 2px solid #7063EC;
+  border-radius: 5px;
+}
+
+.cp-showcase-container a {
+  color: #7063EC;
+}
+
+/**************************** Resources.html Styles ****************************/
+
+.resource-container {
+  margin-bottom: 40px;
+  margin-top: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.resource-card {
+  width: 300px;
+  height: 365px;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.resource-card h3 {
+  margin: 0;
+}
+
+.resource-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/**************************** Syllabus.html Styles ****************************/
+
+.syllabus-card {
+  width: 90%;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 3.5em;
+}
+
+#grade-table tr:first-child > td {
+  border-top-width: 2px;
+}
+
+#grade-table tr:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+
+#grade-table tr:first-child td:last-child {
+  border-top-right-radius: 5px;
+}
+
+/*************************** Exploration Sessions *****************************/
+
+#explore-container > .card {
+  width: 45em;
+}
+
+/**************************** Creative Projects *******************************/
+
+.editor {
+  display: flex;
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+.code-container {
+  color: #f5e6d0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+pre {
+  font-size: 12pt;
+  white-space: pre-wrap;
+  margin: 1em 0 1em 0;
+}
+
+pre code {
+  color: #C4C4C4;
+  background-color: #4F576D;
+  padding: 0;
+  border-radius: 0;
+}
+
+.comment-color {
+  color: #C4C4C4;
+}
+
+.purple {
+  color: #E884F4;
+}
+
+.blue {
+  color: #74BCFF;
+}
+
+.red {
+  color: #F77373;
+}
+
+.green {
+  color: #7FD377;
+}
+
+.old-site-warning {
+   color:#f34e34;
+   font-size: 1.3em;
+}
+
+/****************************** Mobile Friendly *******************************/
+
+/* Changes to CSS when the screen is less than 1100 pixels wide */
+@media screen and (max-width: 1100px) {
+  /* This CSS hides all navigation bar links except the course title */
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  #mobile-dropdown-icon {
+    display: block;
+  }
+
+  #mobile-dropdown-icon, #mobile-x-icon {
+    position: absolute;
+    right: 0;
+    top: 1.25em;
+    margin-right: 1.6em;
+  }
+
+  .navbar.responsive-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar.responsive-nav #mobile-dropdown-icon {
+    display: none;
+  }
+
+  .navbar.responsive-nav #mobile-x-icon {
+    display: block;
+  }
+
+  .navbar.responsive-nav a:first-child {
+    position: absolute;
+    left: 0;
+    top: 1.13em;
+  }
+
+  .navbar.responsive-nav a:nth-child(2) {
+    margin-top: 2em;
+  }
+
+  .navbar.responsive-nav a {
+    float: none;
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 0.5em;
+  }
+
+  .staff-card {
+    margin: 5px auto 20px auto;
+  }
+
+  #homepage-img {
+    display: none;
+  }
+}
+
+/* Changes to CSS when the screen is less than 950 pixels wide */
+@media screen and (max-width: 950px) {
+  #welcome-container {
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15em;
+    width: 37em;
+  }
+
+  #title-container {
+    margin-top: 6em;
+  }
+
+  #cta-btn {
+    padding: 0.8em 2em 0.8em 2em;
+  }
+
+  .quick-link-card {
+    width: 19em;
+    padding-bottom: 1em;
+  }
+}
+
+/* Changes to CSS when the screen is less than 875 pixels wide */
+@media screen and (max-width: 875px) {
+  .calendar {
+    width: 100%;
+  }
+
+  .wpl-calendar {
+    margin-top: 3.5em;
+  }
+
+  table tbody {
+    width: 100%;
+  }
+
+  th {
+    display: none;
+  }
+
+  table td {
+    width: 100%;
+    height: auto;
+  }
+
+  table td:nth-child(1n+1) {
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 0;
+  }
+
+  table tr:last-child td:nth-child(1n+1) {
+    border-bottom-width: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  table tr:nth-child(2) td:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-width: 2px;
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .oh-shift, .wpl-shift, .lecture, .section, .hw, .cp, .exam, .explore, .holiday {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+
+  .wpl-day-mobile {
+    display: block;
+    text-align: center;
+    margin: 0 0 0.6em 0;
+    padding: 0.2em 0 0.2em 0;
+    background-color: #232323;
+    color: white;
+    font-size: 14pt;
+  }
+}
+
+
+/* Changes to CSS when the screen is less than 750 pixels wide */
+@media screen and (max-width: 750px) {
+  #explore-container > .card {
+    width: 100%;
+  }
+}
+
+/* Changes to CSS when the screen is less than 650 pixels wide */
+@media screen and (max-width: 650px) {
+  header > a {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p, a, li {
+    font-size: 1em;
+  }
+
+  .card {
+    width: 19em;
+    flex-direction: column;
+  }
+
+  .card > img {
+    height: 19em;
+    width: 19em;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /***** Welcome Container *****/
+  #welcome-container {
+    width: 20em;
+  }
+
+  /***** Quick Links *****/
+  .quick-link-card {
+    height: auto;
+  }
+
+  /***** Announcements & General Info *****/
+  #announcements-list, #general-info-list {
+    width: 19em;
+  }
+
+  /***** Staff *****/
+  .staff-info h3 {
+    margin: 0.65em 0 0.7em 0.6em;
+  }
+
+  .staff-info p {
+    margin: 0 0.8em 0.4em 0.9em;
+  }
+
+  .staff-info p:last-child {
+    margin-bottom: 1.5em;
+  }
+
+  .staff-info > a {
+    display: block;
+    margin-left: 0.9em;
+    margin-bottom: 1.3em;
+  }
+
+  /***** Homework *****/
+  .assignment-card {
+    width: 100%;
+  }
+
+  /***** Resources *****/
+  .resource-container {
+    margin-bottom: 2.2em;
+  }
+
+  .resource-card {
+    width: 20em;
+    height: 24em;
+    padding: 2em;
+  }
+
+  .resource-card ul {
+    padding-left: 2em;
+  }
+
+  /***** Syllabus *****/
+  .syllabus-card {
+    width: 90%;
+  }
+
+  /***** Footer *****/
+  #cse-wordmark {
+    width: 11.5em;
+  }
+}
+
+/********************************* Animations *********************************/
+/* ----------------------------------------------
+ * Generated by Animista on 2018-12-26 0:35:38
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+.slide-top1 {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top2 {
+	-webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top3 {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top4 {
+	-webkit-animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+  }
+}
+
+
+.slide-right-focus-in {
+	-webkit-animation: slide-right-focus-in 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right-focus-in 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide-right-focus-in {
+  0% {
+    -webkit-transform: translateX(-75px);
+            transform: translateX(-75px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-right-focus-in {
+  0% {
+    -webkit-transform: translateX(-75px);
+            transform: translateX(-75px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}

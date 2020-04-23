@@ -1,0 +1,44 @@
+{
+  "sections": [
+    {
+      "name": "Section 1: Intro to HTML and Git",
+      "date": "Insert Date",
+      "description": "",
+      "slides": "#",
+      "qc": "#",
+      "qcsolution": "#"
+    },
+    {
+      "name": "Section 2: Intro to CSS",
+      "date": "Insert Date",
+      "description": "",
+      "slides": "#",
+      "qc": "#",
+      "qcsolution": "#"
+    },
+    {
+      "name": "Section 3: Intro to JavaScript",
+      "date": "Insert Date",
+      "description": "",
+      "slides": "#",
+      "qc": "#",
+      "qcsolution": "#"
+    },
+    {
+      "name": "Section 4: Intro to Node.js",
+      "date": "Insert Date",
+      "description": "",
+      "slides": "#",
+      "qc": "#",
+      "qcsolution": "#"
+    },
+    {
+      "name": "Section 5: Intro to SQL",
+      "date": "Insert Date",
+      "description": "",
+      "slides": "#",
+      "qc": "#",
+      "qcsolution": "#"
+    }
+  ]
+}

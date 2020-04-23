@@ -1,0 +1,54 @@
+{
+  "homework": [
+    {
+      "name": "Homework 1: HTML",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "demolink": "#.mov",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true
+    },
+    {
+      "name": "Homework 2: CSS",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "demolink": "#.mov",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true
+    },
+    {
+      "name": "Homework 3: JavaScript",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "demolink": "#.mov",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true
+    },
+    {
+      "name": "Homework 4: Node.js",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "demolink": "#.mov",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true
+    },
+    {
+      "name": "Homework 5: SQL",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "demolink": "#.mov",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true
+    }
+  ]
+}

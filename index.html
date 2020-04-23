@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Primary Meta Tags -->
+  <title>CSE 154: Web Programming</title>
+  <meta name="title" content="CSE 154: Web Programming">
+  <meta name="description"
+    content="A web development course at the Paul G. Allen School of Computer Science & Engineering that covers the languages, tools, and techniques for developing interactive and dynamic web pages.">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <meta charset="utf-8">
+
+  <!-- Links to CSS & JS Files -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="application/javascript" src="index.js"></script>
+  <script type="application/javascript" src="responsive-mobile.js"></script>
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://courses.cs.washington.edu/courses/cse154/19sp/">
+  <meta property="og:title" content="CSE 154: Web Programming">
+  <meta property="og:description"
+    content="A web development course at the Paul G. Allen School of Computer Science & Engineering that covers the languages, tools, and techniques for developing interactive and dynamic web pages.">
+  <meta property="og:image" content="assets/cse154-seo.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://courses.cs.washington.edu/courses/cse154/19sp/">
+  <meta property="twitter:title" content="CSE 154: Web Programming">
+  <meta property="twitter:description"
+    content="A web development course at the Paul G. Allen School of Computer Science & Engineering that covers the languages, tools, and techniques for developing interactive and dynamic web pages.">
+  <meta property="twitter:image" content="assets/cse154-seo.png">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h1><a href="index.html">CSE 154: Web Programming</a></h1>
+    <a class="active" href="index.html">Home</a>
+    <a href="calendar/calendar.html">Calendar</a>
+    <a href="sections/sections.html">Sections</a>
+    <a href="homework/homework.html">Homework</a>
+    <a href="creative/creative-projects.html">Creative Projects</a>
+    <a href="exams/exams.html">Exams</a>
+    <a href="resources/resources.html">Resources</a>
+    <a href="syllabus/syllabus.html">Syllabus</a>
+    <svg id="mobile-dropdown-icon" width="40" height="40">
+      <use xlink:href="assets/website-icons.svg#menu-1"></use>
+    </svg>
+    <svg id="mobile-x-icon" width="40" height="40">
+      <use xlink:href="assets/website-icons.svg#close-1"></use>
+    </svg>
+  </header>
+
+  <!-- Main Page Content -->
+  <main>
+    <!-- Homepage Welcome/Animation -->
+    <section id="welcome-container">
+      <div id="title-container">
+        <h1 class="slide-top2">Welcome to Web Programming!</h1>
+        <p class="slide-top3">Welcome to CSE 154, a web development course that introduces the
+          languages, tools, and techniques of modern full-stack development.</p>
+      </div>
+      <img id="homepage-img" class="slide-top4" src="assets/homepage-illustration.svg"
+        alt="Illustration of people working together to make a website.">
+    </section>
+
+    <!-- Annoucements -->
+    <section class="main-content" id="announcements">
+      <h2>Announcements</h2>
+      <!-- index.js will populate announcement information -->
+      <ul id="announcements-list" class="card" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"></ul>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="main-content" id="quick-links">
+      <h2>Quick Links</h2>
+      <section id="quick-link-card-container">
+        <div class="card quick-link-card" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <h3>Calendar</h3>
+          <ul>
+            <li><a class="blue-link" href="calendar/wpl.html">Office Hours Schedule</a></li>
+            <li><a class="blue-link" href="exploration-sessions/exploration-sessions.html">Exploration Sessions</a></li>
+            <li><a class="blue-link" href="mentorship/mentorship.html">Mentorship Program</a></li>
+          </ul>
+        </div>
+        <div class="card quick-link-card" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <h3>Resources</h3>
+          <ul>
+            <li><a class="blue-link" href="#">Resource Link</a></li>
+            <li><a class="blue-link" href="#">Resource Link</a></li>
+            <li><a class="blue-link" href="#">Resource Link</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- Instructors -->
+    <section class="main-content">
+      <h2>Course Instructors</h2>
+      <!-- index.js will populate instructor information -->
+      <div id="instructor-container" class="staff-container"></div>
+    </section>
+
+    <!-- Teaching Assistants -->
+    <section class="main-content">
+      <h2>Teaching Assistants</h2>
+      <!-- index.js will populate TA information -->
+      <div id="ta-container" class="staff-container"></div>
+    </section>
+  </main>
+
+  <!-- Footer Information -->
+  <footer class="text-focus-in">
+    <hr>
+    <div id="footer-items-container">
+      <div id="cse-wordmark">
+        <img src="assets/cse-wordmark-md.png" alt="CSE Watermark">
+      </div>
+      <a href="https://www.washington.edu/online/terms/">UW Site Use Agreement</a>
+    </div>
+  </footer>
+
+  <!-- Animate On Scroll Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

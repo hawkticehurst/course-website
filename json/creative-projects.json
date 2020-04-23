@@ -1,0 +1,54 @@
+{
+  "cps": [
+    {
+      "name": "Creative Project 1",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true,
+      "showcaselink": "#"
+    },
+    {
+      "name": "Creative Project 2",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true,
+      "showcaselink": "#"
+    },
+    {
+      "name": "Creative Project 3",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true,
+      "showcaselink": "#"
+    },
+    {
+      "name": "Creative Project 4",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true,
+      "showcaselink": "#"
+    },
+    {
+      "name": "Creative Project 5",
+      "assigned": "Insert Assigned Date",
+      "due": "Insert Due Date",
+      "finaldue": "Insert Lock Date",
+      "acceptlink": "#",
+      "turninlink": "#",
+      "enableturnin": true,
+      "showcaselink": "#"
+    }
+  ]
+}

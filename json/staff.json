@@ -1,0 +1,37 @@
+{
+  "staff": [
+    {
+      "type": "Instructor",
+      "name": "Hawk Ticehurst",
+      "email": "hawkticehurst@gmail.com",
+      "imglink": "staff/photos/hawk-ticehurst.jpg",
+      "aboutme": "https://hawkticehurst.com",
+      "office": "CSE 123",
+      "officehrs": "calendar/wpl.html"
+    },
+    {
+      "type": "Head TA",
+      "name": "Hawk Ticehurst",
+      "email": "hawkticehurst@gmail.com",
+      "imglink": "staff/photos/hawk-ticehurst.jpg",
+      "aboutme": "https://hawkticehurst.com",
+      "officehrs": "calendar/wpl.html"
+    },
+    {
+      "type": "TA",
+      "name": "Hawk Ticehurst",
+      "email": "hawkticehurst@gmail.com",
+      "imglink": "staff/photos/hawk-ticehurst.jpg",
+      "aboutme": "https://hawkticehurst.com",
+      "section": "AA"
+    },
+    {
+      "type": "Mentor",
+      "name": "Hawk Ticehurst",
+      "email": "hawkticehurst@gmail.com",
+      "imglink": "staff/photos/hawk-ticehurst.jpg",
+      "aboutme": "https://hawkticehurst.com",
+      "mentorhrs": "mentorship/mentorship.html"
+    }
+  ]
+}
