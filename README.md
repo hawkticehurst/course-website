@@ -1,6 +1,12 @@
-# CSE 154 Course Website
+<h1 align="center">CSE 154 Course Website</h1>
 
-A modern and responsive course website used by CSE 154: Web Programming at the University of Washington.
+<h4 align="center">A modern and responsive course website used by CSE 154: Web Programming at the University of Washington.</h4>
+
+<p align="center">
+  <a href="#examples">Examples</a>&nbsp;|&nbsp;<a href="#guides">Guides</a>&nbsp;|&nbsp;<a href="#license">License</a>&nbsp;
+</p>
+
+<div align="center"><img src="assets/cse154-seo.png"/></div>
 
 ## Examples
 
