@@ -12,6 +12,7 @@
 
 This course website has been in use since the Spring of 2019. Follow these links to see examples of the course website in action.
 
+- [Summer 2020](https://courses.cs.washington.edu/courses/cse154/20su/)
 - [Spring 2020](https://courses.cs.washington.edu/courses/cse154/20sp/)
 - [Autumn 2019](https://courses.cs.washington.edu/courses/cse154/19au/)
 - [Summer 2019](https://courses.cs.washington.edu/courses/cse154/19su/)
@@ -19,9 +20,9 @@ This course website has been in use since the Spring of 2019. Follow these links
 
 ## Guides
 
-- [How To Update Website Content](./json/README.md)
-- [Where To Put Lecture Slides](./lectures/README.md)
-- [Where To Put Staff Websites and Photos](./staff/README.md)
+- [How To Update Website Content](./src/json/README.md)
+- [Where To Put Lecture Slides](./src/lectures/README.md)
+- [Where To Put Staff Websites and Photos](./src/staff/README.md)
 
 ## License
 
