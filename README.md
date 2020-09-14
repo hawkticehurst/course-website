@@ -6,7 +6,7 @@
   <a href="#examples">Examples</a>&nbsp;|&nbsp;<a href="#guides">Guides</a>&nbsp;|&nbsp;<a href="#license">License</a>&nbsp;
 </p>
 
-<div align="center"><img src="assets/cse154-seo.png"/></div>
+<div align="center"><img src="src/assets/cse154-seo.png"/></div>
 
 ## Examples
 
@@ -20,9 +20,9 @@ This course website has been in use since the Spring of 2019. Follow these links
 
 ## Guides
 
-- [How To Update Website Content](./src/json/README.md)
-- [Where To Put Lecture Slides](./src/lectures/README.md)
-- [Where To Put Staff Websites and Photos](./src/staff/README.md)
+- [How To Update Website Content](src/json/README.md)
+- [Where To Put Lecture Slides](src/lectures/README.md)
+- [Where To Put Staff Websites and Photos](src/staff/README.md)
 
 ## License
 
